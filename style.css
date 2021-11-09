@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,300&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Chivo', sans-serif;
+    background: #121725;
+    font-size: inherit;  
+}
+span{
+    color: white;
+}
+p{
+    color: #C2CBE5;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+.photo{
+  z-index:-1;
+    background-image: url(zadatak-3/starter-code/assets/desktop/image-host.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100rem;
+    margin-right: -45rem;
+    position: relative;
+    right: 35rem;
+}
+.bground{
+    background-color:#121725;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18rem;
+    margin-left: 15rem;
+}
+.flex{
+    display: flex;
+}
+h1{
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+    text-transform: uppercase;
+    color: #54E6AF;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60rem;
+}
+.info-text{
+    padding: 2.5rem 0;
+}
+
+form{
+    display: flex;
+    background-color: #2C344B;
+    border-color: transparent;
+    border-radius: 3rem;
+    width: 28rem;
+    height: 3rem;
+}
+.pattern{
+    text-align: right;
+    position: relative;
+    bottom: 4.5rem;
+}
+#email{
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: 700;
+}
+#button{
+    border-color: transparent;
+    border-radius: 30px;
+    background-color: #54E6AF;
+    font-weight: 700;
+}
+#button:hover{
+    cursor: pointer;
+    background-color: #B3FFE2;
+}
+.error{
+    visibility: hidden;
+    color: red;
+}
+.input{
+    font-weight: 700;
+}
+.logo{
+    padding: 7rem 0 0 10rem;
+}
+@media(max-width:1050px){
+    body{
+        display:grid;
+    }
+    .flex{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    .photo{
+          background-image: url(zadatak-3/starter-code/assets/tablet/image-host.jpg);
+          width: 100rem;
+      }
+      .bground{
+          font-size: inherit;
+          margin-left: 5rem;
+          width: 100%;
+      }
+      .pattern{
+        text-align: left;
+        position: relative;
+        top: 2rem;
+        left: 4rem;
+      }
+}
+
+@media(max-width:700px){
+    body{
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo{
+        display:none;
+    }
+    .logo{
+        text-align: center;
+        padding: 6rem  0 6rem 19rem;
+        transform: scale(1.5);
+        margin: 0;
+    }
+
+    .pattern{
+        display: none;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .bground{
+        margin: 0px;
+    }
+    .footer{
+        padding:0 1rem;
+    }
+    #form{
+        position: relative;
+        top: 15rem;
+        display: grid;
+        grid-gap: 1rem;
+        width: 90%;
+        text-align: center;
+        height: 5rem;
+    }
+    #email{
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+    }
+    #button{
+        margin-top: 2rem;
+        height: 5rem;
+    }
+}   
